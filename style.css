@@ -40,12 +40,13 @@ p{
   color : hsl(75, 94%, 57%);
   font-weight: 600;
 }
-.social{
+.link{
   display: flex;
   flex-direction: column;
   margin: 15px auto;
   justify-content: space-between;
 }
+
 .goals{
   text-align: center;
 }
