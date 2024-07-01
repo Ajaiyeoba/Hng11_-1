@@ -1,0 +1,74 @@
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(0, 0%, 8%);
+  padding: 70px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color : hsl(0, 0%, 100%);
+  font-family: "Inter" sans-serif;
+  align-self: center;
+  justify-content: center;
+}
+.container{
+  background-color: hsl(0, 0%, 12%);
+  margin: 0 auto;
+  width: 100%;
+  min-width: 200px;
+  justify-content:center;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.profileImage{
+  width: 200px;
+  height: 200px;
+}
+h1{
+  font: larger;
+  font-weight: 700;
+}
+p{
+  font-size: 15px;
+}
+.email{
+  color : hsl(75, 94%, 57%);
+  font-weight: 600;
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+  justify-content: space-between;
+}
+.goals{
+  text-align: center;
+}
+
+.goals ol li{
+  text-align: left;
+  padding: 5px 15px;
+}
+
+button{
+  background-color:  hsl(0, 0%, 20%);
+  color: hsl(75, 94%, 57%);;
+  padding: 15px;
+  margin: 10px auto;
+  border: 0;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 370px;
+  }
+}
