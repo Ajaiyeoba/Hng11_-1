@@ -11,7 +11,7 @@ body{
   flex-direction: column;
   text-align: center;
   color : hsl(0, 0%, 100%);
-  font-family: "Inter" sans-serif;
+  font-family: "Poppins", sans-serif;
   align-self: center;
   justify-content: center;
 }
