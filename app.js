@@ -1,15 +1,11 @@
+const currentTimeUTC = document.getElementById('currentTimeUTC')
+const currentDay = document.getElementById('currentDay')
+const now = new Date()
+const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dayOfWeek = now.getUTCDay()
 
-function updateTime() {
-            const now = new Date();
-            const utcTime = now.toUTCString().split(' ')[4];
-            const utcDay = now.toUTCString().split(',')[0];
-            const utcDateArray = now.toUTCString().split(' ');
-            const utcDate = `${utcDateArray[1]} ${utcDateArray[2]} ${utcDateArray[3]}`;  // Format as 'Date Month Year'
+const utcTimeString =  now.toUTCString()
 
-            document.getElementById('time').textContent = utcTime;
-            document.getElementById('day').textContent = utcDay;
-            document.getElementById('date').textContent = utcDate;
-        }
+currentTimeUTC.textContent = `${utcTimeString.slice(4, -3)} UTC`
 
-        updateTime();
-        setInterval(updateTime, 1000);  // Update every second
+currentDay.textContent = `${dayNames[dayOfWeek].toString()},`
